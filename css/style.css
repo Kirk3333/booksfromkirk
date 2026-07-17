@@ -282,6 +282,16 @@ textarea { min-height: 150px; resize: vertical; }
 button.btn { cursor: pointer; background: var(--title-red); color: #fff; border: none; }
 button.btn:hover { background: #c53522; }
 
+/* ---------- Author sign-off ---------- */
+
+.signoff {
+  font-family: "Alfa Slab One", Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--title-red);
+  margin-top: 26px !important;
+  letter-spacing: 0.01em;
+}
+
 /* ---------- Two-column about ---------- */
 
 .about-grid {
