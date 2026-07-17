@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kirkjohnsonbooks.com/sitemap.xml
