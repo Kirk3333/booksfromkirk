@@ -209,7 +209,7 @@
       </p>
       <div class="btn-row">
         <a class="btn solid" href="#books">Browse the Books</a>
-        <a class="btn ghost" href="specials.html">Get a Free First Chapter</a>
+        <a data-track="Free Chapter" data-track-action="free_chapter_click" data-track-label="CTA button" class="btn ghost" href="specials.html">Get a Free First Chapter</a>
       </div>
     </div>
   </section>
@@ -229,7 +229,7 @@
             <span class="genre">Historical Fiction</span>
             <h3>River Boat Gambler</h3>
             <p>A novel based on the true life of George Devol — the most notorious card sharp ever to work the Mississippi.</p>
-            <a class="btn solid" href="https://www.amazon.com/dp/B0H6R3XZB8" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a data-track="Buy on Amazon" data-track-action="buy_click" data-track-label="River Boat Gambler" class="btn solid" href="https://www.amazon.com/dp/B0H6R3XZB8" target="_blank" rel="noopener">Buy on Amazon</a>
           </div>
         </article>
 
@@ -241,7 +241,7 @@
             <span class="genre">Historical Fiction</span>
             <h3>The Queen of Ohio</h3>
             <p>How one woman swindled the richest men in America. A novel based on the true life of Cassie Chadwick.</p>
-            <a class="btn solid" href="https://www.amazon.com/dp/B0H8FL5WJK" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a data-track="Buy on Amazon" data-track-action="buy_click" data-track-label="The Queen of Ohio" class="btn solid" href="https://www.amazon.com/dp/B0H8FL5WJK" target="_blank" rel="noopener">Buy on Amazon</a>
           </div>
         </article>
 
@@ -253,7 +253,7 @@
             <span class="genre">Crime</span>
             <h3>The Key Man</h3>
             <p>The best thief Chicago never caught. By day he fixes cars. By night, no lock in the city is safe.</p>
-            <a class="btn solid" href="https://www.amazon.com/dp/B0H8FMM6KW" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a data-track="Buy on Amazon" data-track-action="buy_click" data-track-label="The Key Man" class="btn solid" href="https://www.amazon.com/dp/B0H8FMM6KW" target="_blank" rel="noopener">Buy on Amazon</a>
           </div>
         </article>
 
@@ -265,7 +265,7 @@
             <span class="genre">Suspense</span>
             <h3>Shadow Cover</h3>
             <p>He was always there. She just didn't know why. A slow-burn thriller about the watcher in the dark.</p>
-            <a class="btn solid" href="https://www.amazon.com/dp/B0H8FTFB95" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a data-track="Buy on Amazon" data-track-action="buy_click" data-track-label="Shadow Cover" class="btn solid" href="https://www.amazon.com/dp/B0H8FTFB95" target="_blank" rel="noopener">Buy on Amazon</a>
           </div>
         </article>
 
@@ -277,7 +277,7 @@
             <span class="genre">Romance · Book 1</span>
             <h3>Motorcycle Club Romance</h3>
             <p>Does she pose a risk to the motorcycle club's future and growth? Love and loyalty collide on the open road.</p>
-            <a class="btn solid" href="https://www.amazon.com/dp/B0GNNN34G7" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a data-track="Buy on Amazon" data-track-action="buy_click" data-track-label="Motorcycle Club Romance" class="btn solid" href="https://www.amazon.com/dp/B0GNNN34G7" target="_blank" rel="noopener">Buy on Amazon</a>
           </div>
         </article>
 
@@ -289,7 +289,7 @@
             <span class="genre">Romance · Book 2</span>
             <h3>From Romance to Conquest</h3>
             <p>They built a love on the open road. Now they're building an empire. The saga continues.</p>
-            <a class="btn solid" href="https://www.amazon.com/dp/B0GZY3W813" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a data-track="Buy on Amazon" data-track-action="buy_click" data-track-label="From Romance to Conquest" class="btn solid" href="https://www.amazon.com/dp/B0GZY3W813" target="_blank" rel="noopener">Buy on Amazon</a>
           </div>
         </article>
 
@@ -305,7 +305,7 @@
         Pick any book and I'll send the complete first chapter straight to your
         inbox — free, no strings attached.
       </p>
-      <a class="btn solid" href="specials.html">Claim Your Free Chapter</a>
+      <a data-track="Free Chapter" data-track-action="free_chapter_click" data-track-label="CTA button" class="btn solid" href="specials.html">Claim Your Free Chapter</a>
     </div>
   </section>
 
@@ -323,5 +323,15 @@
   </div>
 </footer>
 
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[data-track]');
+      if (!a || typeof gtag !== 'function') return;
+      gtag('event', a.getAttribute('data-track-action') || 'click', {
+        'event_category': a.getAttribute('data-track'),
+        'event_label': a.getAttribute('data-track-label') || a.href
+      });
+    });
+  </script>
 </body>
 </html>

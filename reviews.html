@@ -80,7 +80,7 @@
             <span class="genre">Historical Fiction</span>
             <h3>River Boat Gambler</h3>
             <p>Based on the true life of George Devol.</p>
-            <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H6R3XZB8" target="_blank" rel="noopener">Write a Review</a>
+            <a data-track="Write a Review" data-track-action="review_click" data-track-label="River Boat Gambler" class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H6R3XZB8" target="_blank" rel="noopener">Write a Review</a>
           </div>
         </article>
 
@@ -92,7 +92,7 @@
             <span class="genre">Historical Fiction</span>
             <h3>The Queen of Ohio</h3>
             <p>Based on the true life of Cassie Chadwick.</p>
-            <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H8FL5WJK" target="_blank" rel="noopener">Write a Review</a>
+            <a data-track="Write a Review" data-track-action="review_click" data-track-label="The Queen of Ohio" class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H8FL5WJK" target="_blank" rel="noopener">Write a Review</a>
           </div>
         </article>
 
@@ -104,7 +104,7 @@
             <span class="genre">Crime</span>
             <h3>The Key Man</h3>
             <p>The best thief Chicago never caught.</p>
-            <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H8FMM6KW" target="_blank" rel="noopener">Write a Review</a>
+            <a data-track="Write a Review" data-track-action="review_click" data-track-label="The Key Man" class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H8FMM6KW" target="_blank" rel="noopener">Write a Review</a>
           </div>
         </article>
 
@@ -116,7 +116,7 @@
             <span class="genre">Suspense</span>
             <h3>Shadow Cover</h3>
             <p>He was always there. She just didn't know why.</p>
-            <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H8FTFB95" target="_blank" rel="noopener">Write a Review</a>
+            <a data-track="Write a Review" data-track-action="review_click" data-track-label="Shadow Cover" class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0H8FTFB95" target="_blank" rel="noopener">Write a Review</a>
           </div>
         </article>
 
@@ -128,7 +128,7 @@
             <span class="genre">Romance</span>
             <h3>Motorcycle Club Romance</h3>
             <p>Love and loyalty on the open road.</p>
-            <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0GNNN34G7" target="_blank" rel="noopener">Write a Review</a>
+            <a data-track="Write a Review" data-track-action="review_click" data-track-label="Motorcycle Club Romance" class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0GNNN34G7" target="_blank" rel="noopener">Write a Review</a>
           </div>
         </article>
 
@@ -140,7 +140,7 @@
             <span class="genre">Romance</span>
             <h3>From Romance to Conquest</h3>
             <p>They built a love. Now they're building an empire.</p>
-            <a class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0GZY3W813" target="_blank" rel="noopener">Write a Review</a>
+            <a data-track="Write a Review" data-track-action="review_click" data-track-label="From Romance to Conquest" class="btn solid" href="https://www.amazon.com/review/create-review?asin=B0GZY3W813" target="_blank" rel="noopener">Write a Review</a>
           </div>
         </article>
 
@@ -176,7 +176,7 @@
         Pick any book and I'll send the complete first chapter to your inbox —
         free, no catch.
       </p>
-      <a class="btn solid" href="specials.html">Get a Free Chapter</a>
+      <a data-track="Free Chapter" data-track-action="free_chapter_click" data-track-label="CTA button" class="btn solid" href="specials.html">Get a Free Chapter</a>
     </div>
   </section>
 
@@ -194,5 +194,15 @@
   </div>
 </footer>
 
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[data-track]');
+      if (!a || typeof gtag !== 'function') return;
+      gtag('event', a.getAttribute('data-track-action') || 'click', {
+        'event_category': a.getAttribute('data-track'),
+        'event_label': a.getAttribute('data-track-label') || a.href
+      });
+    });
+  </script>
 </body>
 </html>
