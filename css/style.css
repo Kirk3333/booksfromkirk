@@ -305,7 +305,7 @@ button.btn:hover { background: #c53522; }
   border: 1px solid var(--line);
   border-radius: 4px;
   overflow: hidden;
-  max-width: 300px;
+  max-width: 340px;
 }
 
 .about-copy p + p { margin-top: 18px; }
