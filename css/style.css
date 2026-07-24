@@ -282,6 +282,76 @@ textarea { min-height: 150px; resize: vertical; }
 button.btn { cursor: pointer; background: var(--title-red); color: #fff; border: none; }
 button.btn:hover { background: #c53522; }
 
+.lander-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.92rem;
+  color: var(--copper);
+  text-decoration: none;
+}
+.lander-link:hover { color: var(--paper); }
+
+.book h3 a { color: inherit; text-decoration: none; }
+.book h3 a:hover { color: var(--copper); }
+
+/* ---------- Book landing pages ---------- */
+
+.book-hero {
+  padding-top: 60px;
+  background:
+    radial-gradient(ellipse 90% 70% at 70% 0%,
+      rgba(207, 122, 58, 0.16), transparent 60%);
+}
+
+.book-lander {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.book-lander-cover {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #100c09;
+}
+
+.book-lander-cover img { width: 100%; height: auto; }
+
+.book-lander-copy h1 {
+  font-family: "Alfa Slab One", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 4.5vw, 3.1rem);
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.book-lander-copy .lede {
+  color: var(--paper);
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 26px;
+}
+
+.book-lander-desc p { color: var(--dust); }
+.book-lander-desc p + p { margin-top: 16px; }
+
+.fineprint {
+  color: var(--dust);
+  font-size: 0.92rem;
+  margin-top: 14px;
+}
+
+@media (max-width: 780px) {
+  .book-lander { grid-template-columns: 1fr; gap: 32px; }
+  .book-lander-cover { max-width: 300px; margin: 0 auto; }
+  .book-lander-copy { text-align: left; }
+}
+
 /* ---------- Author sign-off ---------- */
 
 .signoff {
