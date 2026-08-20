@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL3GJ9SL2N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-PL3GJ9SL2N");
+  </script>
+
+  <!-- Per-book config: change these 2 values on each page -->
+  <script>
+    window.BOOK_INFO = {
+      title: "No Forced Entry",
+      asin:  "B0HFTF84K3"
+    };
+  </script>
+
+  <!-- Reusable tracking script: identical on all pages -->
+  <script>
+  (function () {
+    function track(eventName, extraParams) {
+      if (typeof gtag !== "function") return;
+      var params = {
+        book_title: window.BOOK_INFO ? window.BOOK_INFO.title : "(unknown)",
+        book_asin:  window.BOOK_INFO ? window.BOOK_INFO.asin  : "(unknown)"
+      };
+      for (var k in extraParams) { params[k] = extraParams[k]; }
+      gtag("event", eventName, params);
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      // Track clicks to Amazon
+      document.querySelectorAll('a[href*="amazon."]').forEach(function (link) {
+        link.addEventListener("click", function () {
+          track("amazon_click", { link_url: link.href });
+        });
+      });
+      // Track free-first-chapter form submission
+      var form = document.querySelector("#chapter-form");
+      if (form) {
+        form.addEventListener("submit", function () {
+          track("chapter_request", {});
+        });
+      }
+    });
+  })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Forced Entry — Kirk Johnson</title>
+  <meta name="description" content="A father, a daughter, and the most dangerous library in New York. Valerie Thompson breaks into buildings for a living. Legally — until the shelf goes empty.">
+  <link rel="canonical" href="https://kirkjohnsonbooks.com/no-forced-entry.html">
+  <meta property="og:type" content="book">
+  <meta property="og:site_name" content="Kirk Johnson Books">
+  <meta property="og:title" content="No Forced Entry — Kirk Johnson">
+  <meta property="og:description" content="A father, a daughter, and the most dangerous library in New York. Valerie Thompson breaks into buildings for a living. Legally — until the shelf goes empty.">
+  <meta property="og:url" content="https://kirkjohnsonbooks.com/no-forced-entry.html">
+  <meta property="og:image" content="https://kirkjohnsonbooks.com/images/no_forced_entry.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="No Forced Entry — Kirk Johnson">
+  <meta name="twitter:description" content="A father, a daughter, and the most dangerous library in New York. Valerie Thompson breaks into buildings for a living. Legally — until the shelf goes empty.">
+  <meta name="twitter:image" content="https://kirkjohnsonbooks.com/images/no_forced_entry.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Condensed:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "No Forced Entry",
+    "author": { "@type": "Person", "name": "Kirk Johnson",
+      "url": "https://kirkjohnsonbooks.com/" },
+    "image": "https://kirkjohnsonbooks.com/images/no_forced_entry.jpg",
+    "url": "https://kirkjohnsonbooks.com/no-forced-entry.html",
+    "description": "A father, a daughter, and the most dangerous library in New York. Valerie Thompson breaks into buildings for a living. Legally — until the shelf goes empty.",
+    "bookFormat": "https://schema.org/Paperback",
+    "inLanguage": "en",
+    "offers": { "@type": "Offer", "url": "https://www.amazon.com/dp/B0HFTF84K3",
+      "availability": "https://schema.org/InStock" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Kirk<span>Johnson</span></a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section book-hero">
+    <div class="wrap book-lander">
+
+      <div class="book-lander-cover">
+        <img src="images/no_forced_entry.jpg" alt="No Forced Entry book cover — an old iron safe by a window at night with city lights beyond">
+      </div>
+
+      <div class="book-lander-copy">
+        <p class="eyebrow">Thriller</p>
+        <h1>No Forced Entry</h1>
+        <p class="lede">A father, a daughter, and the most dangerous library in New York.</p>
+
+        <div class="book-lander-desc">
+          <p>Valerie Thompson breaks into buildings for a living. Legally. Banks, museums, private vaults — they pay her to defeat their security, then pay her again for the report explaining how she did it.</p>
+          <p>Fifteen years of those reports are written down in fifteen black notebooks, in a hand only she can read, on a low shelf in a spare room in Brooklyn. Every blind camera in New York. Every propped door.</p>
+          <p>Then a casino executive hires her firm, and likes her, and starts asking questions. Her father meets the man once and tells her to end it. He will not say why. He cannot — not without opening the room he has kept shut since 1998.</p>
+          <p>By the time she understands what she has been handed, the shelf is empty, the police are the one call she cannot make, and the only man who can help her has hands that can no longer feel a lock.</p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn solid" href="https://www.amazon.com/dp/B0HFTF84K3" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="btn ghost" href="#free-chapter">Read the First Chapter Free</a>
+        </div>
+        <p class="fineprint">Available now on Amazon in paperback.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="free-chapter">
+    <div class="wrap">
+      <span class="stamp">First Chapter Free</span>
+      <h2 class="section-title">Read Chapter One of No Forced Entry</h2>
+      <p class="section-sub">
+        Tell me where to send it and I'll email you the complete first chapter —
+        free, no catch. If it hooks you, the whole book is waiting on Amazon.
+      </p>
+
+      <form id="chapter-form" name="chapter-request" method="POST" action="/thanks.html"
+            data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="chapter-request">
+        <input type="hidden" name="book" value="No Forced Entry">
+        <p style="display:none">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <div class="field">
+          <label for="name">Your first name</label>
+          <input type="text" id="name" name="name" autocomplete="given-name">
+        </div>
+
+        <div class="field">
+          <label for="email">Email address *</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <button class="btn" type="submit">Send My Free Chapter</button>
+      </form>
+
+      <p class="fineprint" style="margin-top:22px; max-width:56ch;">
+        Your email is only used to send your chapter and occasional news about new
+        releases. No spam, ever.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Ready for the whole story?</h2>
+      <p class="section-sub">
+        No Forced Entry is available now on Amazon in paperback.
+      </p>
+      <div class="btn-row">
+        <a class="btn solid" href="https://www.amazon.com/dp/B0HFTF84K3" target="_blank" rel="noopener">Buy on Amazon</a>
+        <a class="btn ghost" href="index.html#books">See All the Books</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>&copy; 2026 Kirk Johnson. All rights reserved.</div>
+    <div>
+      <a href="about.html">About</a> &nbsp;·&nbsp;
+      <a href="specials.html">Specials</a> &nbsp;·&nbsp;
+      <a href="reviews.html">Reviews</a> &nbsp;·&nbsp;
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
