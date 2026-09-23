@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL3GJ9SL2N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-PL3GJ9SL2N");
+  </script>
+
+  <!-- Per-book config: change these 2 values on each page -->
+  <script>
+    window.BOOK_INFO = {
+      title: "Flawed Imitation",
+      asin:  "B0HKPYWGZ5"
+    };
+  </script>
+
+  <!-- Reusable tracking script: identical on all pages -->
+  <script>
+  (function () {
+    function track(eventName, extraParams) {
+      if (typeof gtag !== "function") return;
+      var params = {
+        book_title: window.BOOK_INFO ? window.BOOK_INFO.title : "(unknown)",
+        book_asin:  window.BOOK_INFO ? window.BOOK_INFO.asin  : "(unknown)"
+      };
+      for (var k in extraParams) { params[k] = extraParams[k]; }
+      gtag("event", eventName, params);
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      // Track clicks to Amazon
+      document.querySelectorAll('a[href*="amazon."]').forEach(function (link) {
+        link.addEventListener("click", function () {
+          track("amazon_click", { link_url: link.href });
+        });
+      });
+      // Track free-first-chapter form submission
+      var form = document.querySelector("#chapter-form");
+      if (form) {
+        form.addEventListener("submit", function () {
+          track("chapter_request", {});
+        });
+      }
+    });
+  })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flawed Imitation — Kirk Johnson</title>
+  <meta name="description" content="A Valerie Thompson Thriller. A Scottsdale jewelry store is robbed by a thief the FBI has been chasing for four years — but the drill hole could never have opened that safe.">
+  <link rel="canonical" href="https://kirkjohnsonbooks.com/flawed-imitation.html">
+  <meta property="og:type" content="book">
+  <meta property="og:site_name" content="Kirk Johnson Books">
+  <meta property="og:title" content="Flawed Imitation — Kirk Johnson">
+  <meta property="og:description" content="A Valerie Thompson Thriller. A Scottsdale jewelry store is robbed by a thief the FBI has been chasing for four years — but the drill hole could never have opened that safe.">
+  <meta property="og:url" content="https://kirkjohnsonbooks.com/flawed-imitation.html">
+  <meta property="og:image" content="https://kirkjohnsonbooks.com/images/flawed_imitation.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flawed Imitation — Kirk Johnson">
+  <meta name="twitter:description" content="A Valerie Thompson Thriller. A Scottsdale jewelry store is robbed by a thief the FBI has been chasing for four years — but the drill hole could never have opened that safe.">
+  <meta name="twitter:image" content="https://kirkjohnsonbooks.com/images/flawed_imitation.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Condensed:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Flawed Imitation",
+    "author": { "@type": "Person", "name": "Kirk Johnson",
+      "url": "https://kirkjohnsonbooks.com/" },
+    "image": "https://kirkjohnsonbooks.com/images/flawed_imitation.jpg",
+    "url": "https://kirkjohnsonbooks.com/flawed-imitation.html",
+    "description": "A Valerie Thompson Thriller. A Scottsdale jewelry store is robbed by a thief the FBI has been chasing for four years — but the drill hole could never have opened that safe.",
+    "bookFormat": "https://schema.org/Paperback",
+    "inLanguage": "en",
+    "offers": { "@type": "Offer", "url": "https://www.amazon.com/dp/B0HKPYWGZ5",
+      "availability": "https://schema.org/InStock" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Kirk<span>Johnson</span></a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section book-hero">
+    <div class="wrap book-lander">
+
+      <div class="book-lander-cover">
+        <img src="images/flawed_imitation.jpg" alt="Flawed Imitation book cover — an FBI agent outside a jewelry store at night">
+      </div>
+
+      <div class="book-lander-copy">
+        <p class="eyebrow">Thriller · New Release</p>
+        <h1>Flawed Imitation</h1>
+        <p class="lede">A Valerie Thompson Thriller.</p>
+
+        <div class="book-lander-desc">
+          <p>A Scottsdale jewelry store is robbed by a thief the FBI has been chasing for four years. Everything matches his method, right down to the drill hole in the safe door.</p>
+          <p>Security consultant Valerie Thompson is the only one who notices that the hole could never have opened that safe.</p>
+          <p>Somebody copied a careful thief and copied him wrong, and the only place they could have learned it is a file nobody is supposed to read.</p>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn solid" href="https://www.amazon.com/dp/B0HKPYWGZ5" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="btn ghost" href="#free-chapter">Read the First Chapter Free</a>
+        </div>
+        <p class="fineprint">Available now on Amazon.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="free-chapter">
+    <div class="wrap">
+      <span class="stamp">First Chapter Free</span>
+      <h2 class="section-title">Read Chapter One of Flawed Imitation</h2>
+      <p class="section-sub">
+        Tell me where to send it and I'll email you the complete first chapter —
+        free, no catch. If it hooks you, the whole book is waiting on Amazon.
+      </p>
+
+      <form id="chapter-form" name="chapter-request" method="POST" action="/thanks.html"
+            data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="chapter-request">
+        <input type="hidden" name="book" value="Flawed Imitation">
+        <p style="display:none">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <div class="field">
+          <label for="name">Your first name</label>
+          <input type="text" id="name" name="name" autocomplete="given-name">
+        </div>
+
+        <div class="field">
+          <label for="email">Email address *</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <button class="btn" type="submit">Send My Free Chapter</button>
+      </form>
+
+      <p class="fineprint" style="margin-top:22px; max-width:56ch;">
+        Your email is only used to send your chapter and occasional news about new
+        releases. No spam, ever.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Ready for the whole story?</h2>
+      <p class="section-sub">
+        Flawed Imitation is available now on Amazon.
+      </p>
+      <div class="btn-row">
+        <a class="btn solid" href="https://www.amazon.com/dp/B0HKPYWGZ5" target="_blank" rel="noopener">Buy on Amazon</a>
+        <a class="btn ghost" href="index.html#books">See All the Books</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>&copy; 2026 Kirk Johnson. All rights reserved.</div>
+    <div>
+      <a href="about.html">About</a> &nbsp;·&nbsp;
+      <a href="specials.html">Specials</a> &nbsp;·&nbsp;
+      <a href="reviews.html">Reviews</a> &nbsp;·&nbsp;
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
